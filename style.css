@@ -3,15 +3,17 @@
 }
 
 body{
-  background-color: yellow;
-  color: black;
+  background-color: #E5D63D;
 }
 
 h1{
   text-align: center;
-  margin-left: 400px;
-  margin-right: 400px;
+  background-color: #9E9634;
+  height: 150px;    
+}
 
+h2{
+  z-index: 1; 
 }
 
 p {
@@ -24,8 +26,9 @@ p {
 
 #avatar{
   border-radius: 50%;
-  height: 200px; 
-  width: 200px;
+  height: 150px; 
+  width: 150px;
+  position: relative;
 }
 
 #hookbill{
@@ -54,6 +57,7 @@ p {
   padding: 1rem;
   background-color: black;
   text-align: center;
+  color: white;
 }
 
 
