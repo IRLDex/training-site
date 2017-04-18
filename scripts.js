@@ -3,6 +3,6 @@
 //   alert('hello from a;lkjasd;fj');
 // });
 
-$("#avatar").on('mouseover', function(){
-  $("#actualname").toggle();
-});
+// $("#avatar").on('mouseover', function(){
+//   $("#actualname").toggle();
+// });
