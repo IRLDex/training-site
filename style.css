@@ -1,91 +1,56 @@
-html { 
-  font-family: "Arial", Arial, sans-serif;
-  background: url(assets/space.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: -1;
-}
-
 .border{
-  border: 1px solid white;
+  border: 1px solid green;
 }
 
-/*Navigtion bar*/
-
-.navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: black;
-    overflow: hidden;
-    text-align: center;
-    z-index: 100;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navbar a:hover {
-    background-color: white;
-    color: black;
-}
-
-.navbar a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.content {
-    margin-top: 100px;
-}
-
-#avatarContainer{
- text-align: center;
-}
-
-#avatar{
+.icon{
+  width: 100%;
   border-radius: 50%;
-  margin: 50px auto;
-  height: 150px; 
-  width: 150px;
-  position: relative;
-}
-
-
-/*Body*/
-
-body{
-  height: 100%;
-}
-
-h1{
+  width: 75px;
+  height: 50px;
+  margin: 10px;
+  background-color: lightgrey;
   text-align: center;
-  background-color: #9E9634;
-  height: 150px;    
+  vertical-align: center;
 }
 
-h2{
-  z-index: 1; 
+#myNavBar{
+  top: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: grey;
 }
 
-p {
-    display: block;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 400px;
-    margin-right: 400px;
-    color: white;
+
+.container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-
-
+.item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
