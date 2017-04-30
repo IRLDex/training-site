@@ -1,16 +1,33 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
 .border{
   border: 1px solid green;
 }
 
-.icon{
-  width: 100%;
-  border-radius: 50%;
-  width: 75px;
-  height: 50px;
-  margin: 10px;
-  background-color: lightgrey;
-  text-align: center;
-  vertical-align: center;
+body {
+  height: 100%;
+  font: 100% sans-serif;
+  background: black;
+}
+
+.parallax{
+    background-image: url("assets/trees.jpg");
+    /* Set a specific height */
+    width: 100%;
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #myNavBar{
@@ -20,37 +37,61 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  margin: 0 0 20px 0;
   justify-content: left;
   align-items: center;
-  background-color: grey;
+  background-color: darkgrey;
+  > * {
+    margin: 0 10px;
+  }
 }
 
+.icon{
+  width: 75px;
+  height: 75px;
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+}
 
 .container {
   padding: 0;
   margin: 0;
-  list-style: none;
   
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
   -webkit-flex-flow: row wrap;
+
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+  border: 5px solid yellow;
+  background: transparent;
 }
 
 .item {
-  background: tomato;
+  border: 1px solid black;
+  font-size: 1.5em;
+  flex-grow: 1;
+  flex-basis: auto;
+  background: transparent;
   padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  
-  line-height: 150px;
+  width: 150px;
+  height: auto;
+  line-height: auto;
   color: white;
-  font-weight: bold;
-  font-size: 3em;
   text-align: center;
 }
+
+#avatar{
+  height: 50px
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+
